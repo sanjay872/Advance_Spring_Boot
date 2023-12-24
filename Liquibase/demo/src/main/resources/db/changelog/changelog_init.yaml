@@ -1,0 +1,34 @@
+databaseChangeLog:
+- changeSet:
+    id: 1696614264847-1
+    author: Sanjay (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: id
+            type: BIGINT
+        - column:
+            name: captain
+            type: VARCHAR(255)
+        - column:
+            name: fuel
+            type: INT
+        - column:
+            name: type
+            type: VARCHAR(255)
+        tableName: space_ship
+- changeSet:
+    id: 1696614264847-2
+    author: Sanjay (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            name: next_val
+            type: BIGINT
+        tableName: space_ship_seq
+
